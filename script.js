@@ -1,5 +1,9 @@
 function onesDigit(n) {
   // your code here
+  if (!Number.isInteger(n) || n <= 0) {
+    throw new Error("Input must be a positive integer.");
+  }
+   console.log(n % 10) ;
 }
 
 // Do not change the code below
